@@ -9,5 +9,5 @@
 | 07.11.2025         |     5    |     Cisco module 4 and 5     |    Learned about protecting the Organisation and future possibilities in cybersecurity      |
 | 08.11.2025         |    2     |    Module 1 and 2 exam      | Module 1 and 2 refreshed         |
 | 09.11.2025        |     6    |   Course revision, exams, Logbook and task submission      |    Added logbook to GitHub for assignment submission and Cisco screen shot      |
-| 12.11.2025         |     2      |     Online class recorded      |     Learned about Booking system project      |
+| 11.11.2025         |     2      |     Online class       |     Learned about Booking system project      |
 | 16.11.2025         |    2      |     Logbook update      |     Updated logbook with all entries     |
