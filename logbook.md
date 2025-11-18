@@ -11,3 +11,6 @@
 | 09.11.2025        |     6    |   Course revision, exams, Logbook and task submission      |    Added logbook to GitHub for assignment submission and Cisco screen shot      |
 | 11.11.2025         |     2      |     Online class       |     Learned about Booking system project      |
 | 16.11.2025         |    2      |     Logbook update      |     Updated logbook with all entries     |
+| 17.11.2025         |     3     |     SQL Injection       |     SQL injection vulnerability in WHERE clause and login bypass      |
+| 17.11.2025         |     4      |     Topic: Authentication      |     Brut force attack to guess username and password; 2FA simple bypass      |
+| 18.11.2025         |     3      |     Topic: Access control and self reflection     |     Access to unprotected admin functionality and unprotected admin functionality with unpredictable url      |
