@@ -14,3 +14,6 @@
 | 17.11.2025         |     3     |     SQL Injection       |     SQL injection vulnerability in WHERE clause and login bypass      |
 | 17.11.2025         |     4      |     Topic: Authentication      |     Brut force attack to guess username and password; 2FA simple bypass      |
 | 18.11.2025         |     3      |     Topic: Access control and self reflection     |     Access to unprotected admin functionality and unprotected admin functionality with unpredictable url      |
+| 22.11.2025         |     5      |     Penetration testing (ZAP tool) and docker desktop    |     Setup ZAP tool and made my self familirize with it and Setup docker desktop      |
+| 27.11.2025         |     3      |     Lecture (Intro to the bookign system) (recorded)    |     Follow along lecture to do the task by settign up and running container      |
+| 28.11.2025         |     3      |     Assignment submission     |    Completed phase 1 -> part 1       |
