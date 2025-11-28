@@ -83,5 +83,6 @@ Testing identified several high-risk security vulnerabilities in the registratio
 # 5️⃣ OWASP ZAP Test Report (Attachment)
 
 **Purpose:**  
-- This section includes the complete ZAP scan results in Markdown format.
+- This section includes the complete ZAP scan results in Markdown format.  
+   [OWASP ZAP Full Report](https://github.com/zprakash/CybersecurityAndDataPrivacy2025/blob/main/BookingSystem-Phase1/zap_report_round1.md)
 
