@@ -18,4 +18,4 @@
 | 27.11.2025         |     3      |     Lecture (Intro to the bookign system) (recorded)    |     Follow along lecture to do the task by settign up and running container      |
 | 28.11.2025         |     3      |     Assignment submission     |    Completed phase 1 -> part 1       |
 | 01.12.2025         |     2      |     Intro to the booking system phase 1 -> part 2 (recorded lecture)   |   Ran both phase 1 and phase 2 in docker container      |
-| 02.11.2025         |     4      |     Reporting findings and fixes to the development team    |    Made a detailed report to the development regarding the new zap scan outcomes       |
+| 02.12.2025         |     4      |     Reporting findings and fixes to the development team    |    Made a detailed report to the development regarding the new zap scan outcomes       |
