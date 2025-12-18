@@ -21,3 +21,8 @@
 | 02.12.2025         |     4      |     Reporting findings and fixes to the development team    |    Made a detailed report to the development regarding the new zap scan outcomes       |
 | 07.12.2025         |     4      |     Password cracking recorded video; hydra and hashcat setup    |   Follow along the password cracking video to setup the required tools and files      |
 | 08.12.2025         |     4      |     Cracked 5 passwords; reporting    |    Succcessfully cracked passwords using simple dictiokary attach,  Hashcat mask attack, and online dictionary attack  and also wrote a report        |
+| 15.12.2025        |     2    |     Intro to authentication (recorded)     |   Get to know in depth about authentication     |
+| 16.12.2025        |     3   |     Intro to authorization (recorded)     |   Get to know in depth about authorization and phase 3 task     |
+| 17.12.2025        |     1.5    |     GDPR (recorded)     |   Get to know in depth about GDPR (personal data, privacy policy, terms of servie, cookie policy   )     |
+| 18.12.2025        |     4    |     Phase 3 authorization test     |   Performed the authorization test with different roles (guest, reserver, admin), ZAP scan report and test using wfuzz     |
+| 18.12.2025        |     2    |     Phase 4 assignment    |   Updated GDPR checklist, added app's privacy policy, erms of servie, and cookie policy      |
