@@ -57,6 +57,10 @@ The following specifications are used as the baseline for testing:
   Observation: Guest receives full user list in JSON, including usernames, roles, and user tokens; no authentication required  
   Spec: ❌ Violates spec (point 4 – guests should not access any user data; only administrators should)
 
+- Cannot access reservation details page — `/reservation?id=3`  
+  Observation: Guest is blocked and shown a status page (“Unauthorized” / “Not Found”); no reservation details are exposed  
+  Spec: ✔️ Matches spec (Point 3 & 5 – only authenticated users can interact with reservations)
+
 
 ---
 
@@ -84,6 +88,18 @@ The following specifications are used as the baseline for testing:
   Observation: Reserver receives limited resource information in JSON (resource ID, name, description); no admin-only fields are exposed  
   Spec: ✔️ Matches spec (point 7 – reservers can view resource details)
 
+- Can access own reservation details — `/reservation?id=<own_id>`  
+  Observation: Reserver can view reservation details only when the reservation belongs to them  
+  Spec: ✔️ Matches spec (Point 5 – reserver can manage their own bookings)
+
+- Can update own reservation — `/reservation?id=<own_id>`  
+  Observation: Update action succeeds only for reservations created by the same reserver  
+  Spec: ✔️ Matches spec (Point 5 – reserver manages own reservations)
+
+- Can delete own reservation — `/reservation?id=<own_id>`  
+  Observation: Delete action succeeds only for own reservations  
+  Spec: ✔️ Matches spec (Point 5 – reserver manages own reservations)
+
 ### ❌ Cannot do / Issues
 
 - Can access all reservations via API — `GET /api/reservations` and `GET /api/reservations/:id`  
@@ -110,6 +126,18 @@ The following specifications are used as the baseline for testing:
   Observation: Reserver receives full user list in JSON, including usernames, roles, and user tokens; no restriction based on role  
   Spec: ❌ Violates spec (point 4 – reservers should not access other users’ data; only administrators should)
 
+- Cannot update other users’ reservations via UI — `/reservation?id=<other_id>`  
+  Observation: UI blocks access; no form or buttons appear  
+  Spec: ✔️ Matches spec (frontend restriction enforced)
+
+- Can update other users’ reservations via direct URL — `/reservation?id=<other_id>`  
+  Observation: Direct URL allows updating reservations of other users; backend authorization missing  
+  Spec: ❌ Violates Point 5 (reservers should not update others’ reservations; IDOR vulnerability)
+
+- Cannot delete other users’ reservations — `/reservation?id=<other_id>`  
+  Observation: Delete action is blocked even via direct URL; backend prevents deletion  
+  Spec: ✔️ Matches spec (prevents horizontal privilege escalation)
+
 
 ---
 
@@ -132,6 +160,18 @@ The following specifications are used as the baseline for testing:
 - Can access users API — `GET /api/users`  
   Observation: Admin receives full user list in JSON, including usernames, roles, and user tokens  
   Spec: ✔️ Matches spec (point 4 – admin can view all users)
+
+- Can access reservation details — `/reservation?id=3`  
+  Observation: Administrator can view reservation details for any reservation, regardless of owner  
+  Spec: ✔️ Matches Point 4 – admin can manage all reservations
+
+- Can update any reservation — `/reservation?id=3`  
+  Observation: Administrator can update reservations created by any reserver via UI or direct URL  
+  Spec: ✔️ Matches Point 4 – full reservation management
+
+- Can delete any reservation — `/reservation?id=3`  
+  Observation: Administrator can delete reservations created by any user via UI or direct URL  
+  Spec: ✔️ Matches Point 4 – full reservation management
 
 ### ❌ Cannot do / Issues
 
