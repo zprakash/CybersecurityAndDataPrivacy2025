@@ -26,3 +26,6 @@
 | 17.12.2025        |     1.5    |     GDPR (recorded)     |   Get to know in depth about GDPR (personal data, privacy policy, terms of servie, cookie policy   )     |
 | 18.12.2025        |     4    |     Phase 3 authorization test     |   Performed the authorization test with different roles (guest, reserver, admin), ZAP scan report and test using wfuzz     |
 | 18.12.2025        |     2    |     Phase 4 assignment    |   Updated GDPR checklist, added app's privacy policy, erms of servie, and cookie policy      |
+| 19.12.2025        |     5    |     Cross-site scripting and DOM-based vulnerabilities Labs    |  Tried to crack down the system with different scenario     |
+| 19.12.2025        |     5    |     Cross-site scripting and DOM-based vulnerabilities Labs    |  Tried to crack down the system with different scenario     |
+| 21.12.2025        |    3  |     XXE, SSRF, Information Disclosure labs and final reflection report     | Exploiting XXE using external entities to retrieve files, Basic SSRF against the local server, Information disclosure on debug page and submitted report       |
